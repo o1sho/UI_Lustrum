@@ -1,9 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ui:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ui="UnityEngine.UIElements"
-    xmlns:uie="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
->
-    
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/LustrumMenu.uss?fileID=7433441132597879392&amp;guid=6a870110add4e4e339d6e2a41c274e25&amp;type=3#LustrumMenu"/>
+    <ui:VisualElement class="main-screen" style="flex-grow: 1;">
+        <ui:VisualElement name="sidebar" class="main-sidebar">
+            <ui:VisualElement name="logo-box" class="logo-box"/>
+            <ui:VisualElement name="list-buttons" class="nav-list">
+                <ui:Button text="RESUME" name="btn-resume" class="menu-btn"/>
+                <ui:Button text="NEW GAME" name="btn-new-game" class="menu-btn"/>
+                <ui:Button text="LOAD GAME" name="btn-load-game" class="menu-btn"/>
+                <ui:Button text="SETTINGS" name="btn-settings" class="menu-btn"/>
+                <ui:Button text="QUIT" name="btn-quit" class="menu-btn menu-btn--spaced"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="social-row" class="social-row">
+                <ui:Button text="" name="btn-discord" class="social-btn social-discord"/>
+                <ui:Button text="" name="btn-x" class="social-btn social-x"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="footer" class="footer-meta">
+            <ui:Label text="ver. 1.0.0.0" class="meta-text"/>
+            <ui:Label text="© GAMESTROY. 2026 ALL RIGHTS RESERVED." name="Label" class="meta-text"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>

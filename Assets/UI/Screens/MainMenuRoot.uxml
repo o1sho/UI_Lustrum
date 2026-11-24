@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ui:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ui="UnityEngine.UIElements"
-    xmlns:uie="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
->
-    
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="MainMenuView" src="project://database/Assets/UI/Components/MainMenuView.uxml?fileID=9197481963319205126&amp;guid=3d30b097ded2d4ef8be0347be8326305&amp;type=3#MainMenuView"/>
+    <ui:Instance template="MainMenuView" style="align-items: flex-start; justify-content: center; flex-grow: 1;"/>
 </ui:UXML>
