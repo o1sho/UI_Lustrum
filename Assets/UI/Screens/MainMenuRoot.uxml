@@ -1,4 +1,8 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:Template name="MainMenuView" src="project://database/Assets/UI/Components/MainMenuView.uxml?fileID=9197481963319205126&amp;guid=3d30b097ded2d4ef8be0347be8326305&amp;type=3#MainMenuView"/>
-    <ui:Instance template="MainMenuView" style="align-items: flex-start; justify-content: center; flex-grow: 1;"/>
+    <ui:Template name="SettingsView" src="project://database/Assets/UI/Components/SettingsView.uxml?fileID=9197481963319205126&amp;guid=b7259df50c64140f6991c0f2067b1b68&amp;type=3#SettingsView"/>
+    <ui:VisualElement name="root" style="flex-grow: 1;">
+        <ui:Instance template="MainMenuView" name="screen-main" class="screen"/>
+        <ui:Instance template="SettingsView" name="screen-settings" class="screen screen--hidden-top"/>
+    </ui:VisualElement>
 </ui:UXML>

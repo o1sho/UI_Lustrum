@@ -1,0 +1,111 @@
+.main-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.main-sidebar {
+    width: 784px;
+    height: 100%;
+    margin-top: 96px;
+    padding: 0 0 0 136px;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo-box {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3.389831;
+    flex-shrink: 0;
+    background-image: url("project://database/Assets/UI/Assets/Frames/LustrumLogo.png?fileID=21300000&guid=9ee308a0ab98743879292c25d8a6ad19&type=3#LustrumLogo");
+    -unity-background-scale-mode: scale-to-fit;
+    background-position-x: left 0;
+    background-position-y: top 0;
+}
+
+.nav-list {
+    margin-top: 84px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.menu-btn {
+    width: 416px;
+    height: 56px;
+    margin: 4px 0;
+    padding: 0 0 0 24px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    border-radius: 0;
+    color: var(--color-white_2);
+    font-size: 40px;
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    -unity-font-style: normal;
+    -unity-text-align: middle-left;
+    transition-property: background-color, color;
+    transition-duration: var(--time-fast);
+}
+
+.menu-btn--spaced {
+    margin-top: 24px;
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
+    background-color: var(--color-red-hover-focused);
+    color: var(--color-white_1);
+}
+
+.social-row {
+    flex-direction: row;
+    margin-top: 84px;
+    margin-left: 24px;
+    width: 100%;
+    height: 48px;
+    align-items: flex-start;
+}
+
+.social-btn {
+    width: 48px;
+    height: 48px;
+    margin: 0 16px 0 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    transition-property: scale;
+    transition-duration: var(--time-fast);
+}
+
+.social-discord {
+    background-image: url("project://database/Assets/UI/Assets/Icons/Discord.png?fileID=-1658927225162452868&guid=0ef3cbae6666e4ae3917ca7e705d80f8&type=3#Discord_Default");
+}
+
+.social-discord:hover {
+    background-image: url("project://database/Assets/UI/Assets/Icons/Discord.png?fileID=507802870&guid=0ef3cbae6666e4ae3917ca7e705d80f8&type=3#Discord_Hover");
+}
+
+.social-x {
+    background-image: url("project://database/Assets/UI/Assets/Icons/X.png?fileID=3959922740387019359&guid=0c81aa90982614df69fa03cde5d4d417&type=3#X_Default");
+}
+
+.social-x:hover {
+    background-image: url("project://database/Assets/UI/Assets/Icons/X.png?fileID=97614201824372231&guid=0c81aa90982614df69fa03cde5d4d417&type=3#X_Hover");
+}
+
+.footer-meta {
+    margin-top: auto;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    align-items: flex-start;
+}
+
+.meta-text {
+    font-size: 18px;
+    color: var(--color-white_2);
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/IBMPlexSansItalic%20SDF.asset?fileID=11400000&guid=54323076457f145848f307825a423876&type=2#IBMPlexSansItalic SDF");
+    margin: 0;
+    padding: 0;
+}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 19101, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: LustrumPanelSettings
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.PanelSettings
-  themeUss: {fileID: -4733365628477956816, guid: 5403c768b733745eabf6c4531da83533, type: 3}
+  themeUss: {fileID: -4733365628477956816, guid: 0b9574bec0a274bc795848f7655ea2c7, type: 3}
   m_DisableNoThemeWarning: 0
   m_TargetTexture: {fileID: 0}
   m_RenderMode: 0

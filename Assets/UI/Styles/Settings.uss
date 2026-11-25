@@ -1,0 +1,332 @@
+.settings-screen {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-title {
+    font-size: 40px;
+    color: var(--color-gray_2);
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    -unity-text-align: middle-center;
+    margin: 0 0 24px 0;
+    padding: 0;
+    width: 100%;
+    flex-grow: 0;
+    justify-content: flex-end;
+    height: 80px;
+    margin-bottom: 56px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    align-items: stretch;
+    align-self: auto;
+}
+
+.tabs-bar {
+    flex-direction: row;
+    padding: 10px 12px;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    height: 56px;
+}
+
+.tab-btn {
+    height: 56px;
+    margin: 0 4px;
+    border-width: 0;
+    border-radius: 0;
+    color: var(--color-beige);
+    font-size: 40px;
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    transition-property: background-color, color;
+    transition-duration: var(--time-fast);
+    -unity-text-align: middle-center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 304px;
+    -unity-font-style: normal;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tab-btn:hover {
+    background-color: var(--color-red);
+    color: var(--color-white_1);
+}
+
+.tab-btn--active,
+.tab-btn--active:hover {
+    color: var(--color-beige);
+    width: 304px;
+    height: 56px;
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    font-size: 40px;
+    -unity-text-align: middle-center;
+    background-color: var(--color-red-active);
+}
+
+.settings-body {
+    flex-grow: 1;
+    background-color: var(--color-bg-body);
+    padding: 16px;
+}
+
+.tab-page {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.setting-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 24px;
+    margin-bottom: 10px;
+    background-color: var(--color-bg-row);
+}
+
+.setting-label {
+    font-size: 24px;
+    color: var(--color-muted);
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    margin: 0;
+    padding: 0;
+}
+
+.lustrum-dropdown {
+    width: 340px;
+    margin: 0;
+}
+
+.lustrum-dropdown .unity-base-field__label {
+    display: none;
+}
+
+.lustrum-dropdown .unity-base-popup-field__input {
+    height: 38px;
+    background-color: var(--color-bg-input);
+    border-width: 1px;
+    border-color: var(--color-cream);
+    border-radius: 0;
+    padding: 0 12px;
+}
+
+.lustrum-dropdown .unity-base-popup-field__text {
+    color: var(--color-cream);
+    font-size: 22px;
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+}
+
+.lustrum-dropdown .unity-base-popup-field__arrow {
+    -unity-background-image-tint-color: var(--color-cream);
+}
+
+.slider-group {
+    flex-direction: row;
+    align-items: center;
+    width: 340px;
+}
+
+.lustrum-slider {
+    flex-grow: 1;
+    margin: 0 16px 0 0;
+}
+
+.lustrum-slider .unity-base-field__label {
+    display: none;
+}
+
+.lustrum-slider .unity-base-slider__tracker {
+    height: 6px;
+    background-color: var(--color-bg-track);
+    border-width: 0;
+    margin-top: -3px;
+}
+
+.lustrum-slider .unity-base-slider__fill {
+    background-color: var(--color-accent);
+}
+
+.lustrum-slider .unity-base-slider__dragger {
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    background-color: var(--color-bg-row);
+    border-width: 2px;
+    border-color: var(--color-cream);
+    border-radius: 0;
+}
+
+.slider-value {
+    width: 44px;
+    font-size: 22px;
+    color: var(--color-cream);
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    -unity-text-align: middle-right;
+    margin: 0;
+    padding: 0;
+}
+
+.segmented-group {
+    flex-direction: row;
+    width: 340px;
+}
+
+.seg-btn {
+    height: 56px;
+    margin: 0 4px;
+    border-width: 1px;
+    border-color: var(--color-cream);
+    border-radius: 0;
+    color: var(--color-beige);
+    font-size: 40px;
+    transition-property: background-color, border-color;
+    transition-duration: var(--time-fast);
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    width: 304px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.seg-btn:hover {
+    background-color: var(--color-accent-hover);
+}
+
+.seg-btn--active,
+.seg-btn--active:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.settings-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 24px;
+}
+
+.action-text-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    color: var(--color-cream);
+    font-size: 30px;
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    padding: 6px 24px;
+    transition-property: color;
+    transition-duration: var(--time-fast);
+}
+
+.action-text-btn:hover {
+    color: var(--color-accent);
+}
+
+.settings-top-container {
+    flex-grow: 0;
+    width: 100%;
+    height: 192px;
+}
+
+.settings-mid-container {
+    flex-grow: 0;
+    width: 100%;
+    height: 584px;
+}
+
+.settings-bot-container {
+    flex-grow: 0;
+    width: 100%;
+    height: 56px;
+    padding-right: 0;
+    padding-left: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: stretch;
+    align-content: auto;
+}
+
+.control-btn {
+    height: 56px;
+    margin: 0 4px;
+    border-width: 1px;
+    border-color: var(--color-cream);
+    border-radius: 0;
+    color: var(--color-beige);
+    font-size: 40px;
+    transition-property: background-color, border-color;
+    transition-duration: var(--time-fast);
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    width: 304px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.control-btn:hover {
+    height: 56px;
+    margin: 0 4px;
+    border-width: 1px;
+    border-color: var(--color-cream);
+    border-radius: 0;
+    color: var(--color-white_1);
+    font-size: 40px;
+    transition-property: background-color, border-color;
+    transition-duration: var(--time-fast);
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    width: 304px;
+    background-color: var(--color-red-hover-focused);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}

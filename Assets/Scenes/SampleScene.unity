@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514274802}
   - component: {fileID: 514274801}
+  - component: {fileID: 514274804}
   m_Layer: 0
   m_Name: UI_MainMenu
   m_TagString: Untagged
@@ -174,6 +175,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &514274804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514274800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24eff747438c644ffa322bb0d6606d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LustrumMenuController
+  targetCamera: {fileID: 519420031}
+  mainMenuY: 0
+  settingsY: 26.5
+  loadGameY: -25
+  cameraSmoothTime: 0.25
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

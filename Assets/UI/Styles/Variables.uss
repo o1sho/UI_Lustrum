@@ -1,0 +1,24 @@
+:root {
+    /* Палитра Lustrum */
+    --color-red: rgb(216, 36, 46);
+    --color-red-hover-focused: rgb(216, 36, 46);
+    --color-red-active: rgb(193, 32, 40);
+    --color-amber: rgb(219, 160, 83);
+    --color-white_1: rgb(239, 236, 230);
+    --color-white_2: rgb(184, 180, 173);
+    --color-beige: rgb(253, 231, 186);
+    --color-gray_1: rgb(88, 86, 80);
+    --color-gray_2: rgb(40, 39, 36);
+    --color-gray_3: rgb(35, 34, 31);
+
+    /* Тёмные поверхности (от самой тёмной к светлой) */
+    --color-bg-track: rgb(12, 13, 16);
+    --color-bg-row: rgb(21, 22, 25);
+    --color-bg-tabs: rgb(24, 25, 29);
+    --color-bg-input: rgb(26, 27, 31);
+    --color-bg-body: rgb(29, 30, 34);
+
+    /* Тайминги анимаций */
+    --time-fast: 0.12s;
+    --time-screen: 0.35s;
+}
