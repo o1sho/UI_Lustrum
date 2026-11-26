@@ -5,14 +5,45 @@
         <ui:VisualElement name="top-container" class="settings-top-container">
             <ui:Label text="SETTINGS" name="title" class="settings-title"/>
             <ui:VisualElement name="tabs-bar" class="tabs-bar">
-                <ui:Button text="GAME" name="btn-game" class="tab-btn"/>
-                <ui:Button text="AUDIO" name="btn-audio" class="tab-btn"/>
-                <ui:Button text="DISPLAY" name="btn-display" class="tab-btn"/>
-                <ui:Button text="CONTROLS" name="btn-cotrols" class="tab-btn"/>
+                <ui:Button text="GAME" name="tab-btn-game" class="tab-btn tab-btn--active"/>
+                <ui:Button text="AUDIO" name="tab-btn-audio" class="tab-btn"/>
+                <ui:Button text="DISPLAY" name="tab-btn-display" class="tab-btn"/>
+                <ui:Button text="CONTROLS" name="tab-btn-controls" class="tab-btn"/>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="mid-container" class="settings-mid-container">
-            <ui:Label text="SETTINGS" name="title" class="settings-title"/>
+            <ui:VisualElement name="page-game" class="tab-page">
+                <ui:VisualElement name="settings-row" class="setting-row">
+                    <ui:Label text="LANGUAGE" name="label-setting" class="setting-label"/>
+                    <ui:DropdownField label="" name="dd-language" choices="ENGLISH,RUSSIAN,日本語,中文,ESPAÑOL" index="0" class="lustrum-dropdown"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="settings-row" class="setting-row">
+                    <ui:Label text="TEXT-SPEED" name="label-setting" class="setting-label"/>
+                    <ui:Slider label="Slider" value="0.5" high-value="1" name="slider-text-speed" fill="true" show-input-field="false" page-size="0.1" class="lustrum-slider">
+                        <ui:Label text="0.7" name="label-text-speed" class="slider-value"/>
+                    </ui:Slider>
+                </ui:VisualElement>
+                <ui:VisualElement name="settings-row" class="setting-row">
+                    <ui:Label text="AUTO-ADVANCE SPEED" name="label-setting" class="setting-label"/>
+                    <ui:Slider label="Slider" value="0.5" high-value="1" name="slider-auto-speed" fill="true" show-input-field="false" page-size="0.1" class="lustrum-slider">
+                        <ui:Label text="0.7" name="label-auto-speed" class="slider-value"/>
+                    </ui:Slider>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="page-audio" class="tab-page hidden" style="flex-grow: 1;">
+                <ui:VisualElement name="settings-row" class="setting-row">
+                    <ui:Label text="TEXT-SPEED" name="label-setting" class="setting-label"/>
+                    <ui:Slider label="Slider" value="0.5" high-value="1" name="slider-text-speed" fill="true" show-input-field="false" page-size="0.1" class="lustrum-slider">
+                        <ui:Label text="0.7" name="label-text-speed" class="slider-value"/>
+                    </ui:Slider>
+                </ui:VisualElement>
+                <ui:VisualElement name="settings-row" class="setting-row">
+                    <ui:Label text="AUTO-ADVANCE SPEED" name="label-setting" class="setting-label"/>
+                    <ui:Slider label="Slider" value="0.5" high-value="1" name="slider-auto-speed" fill="true" show-input-field="false" page-size="0.1" class="lustrum-slider">
+                        <ui:Label text="0.7" name="label-auto-speed" class="slider-value"/>
+                    </ui:Slider>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="bot-container" class="settings-bot-container">
             <ui:Button text="RESET" name="btn-reset" class="control-btn"/>

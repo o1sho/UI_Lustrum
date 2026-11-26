@@ -82,12 +82,12 @@ public class LustrumMenuController : MonoBehaviour
 
         _ddLanguage = root.Q<DropdownField>("dd-language");
 
-        _sldTextSpeed = root.Q<Slider>("sld-text-speed");
-        _lblTextSpeed = root.Q<Label>("lbl-text-speed");
+        _sldTextSpeed = root.Q<Slider>("slider-text-speed");
+        _lblTextSpeed = root.Q<Label>("label-text-speed");
         BindSlider(_sldTextSpeed, _lblTextSpeed);
 
-        _sldAutoSpeed = root.Q<Slider>("sld-auto-speed");
-        _lblAutoSpeed = root.Q<Label>("lbl-auto-speed");
+        _sldAutoSpeed = root.Q<Slider>("slider-auto-speed");
+        _lblAutoSpeed = root.Q<Label>("label-auto-speed");
         BindSlider(_sldAutoSpeed, _lblAutoSpeed);
 
         _btnSizeNormal = root.Q<Button>("btn-size-normal");
@@ -257,16 +257,22 @@ public class LustrumMenuController : MonoBehaviour
         }
     }
 
-    private void BindSlider(Slider slider, Label valueLabel)
-    {
-        if (slider == null || valueLabel == null) return;
+private void BindSlider(Slider slider, Label valueLabel, float step = 0.1f)
+{
+    if (slider == null || valueLabel == null) return;
 
-        valueLabel.text = slider.value.ToString("0.0", CultureInfo.InvariantCulture);
-        slider.RegisterValueChangedCallback(evt =>
-        {
-            valueLabel.text = evt.newValue.ToString("0.0", CultureInfo.InvariantCulture);
-        });
-    }
+    valueLabel.text = slider.value.ToString("0.0", CultureInfo.InvariantCulture);
+
+    slider.RegisterValueChangedCallback(evt =>
+    {
+        // Округляем значение до ближайшего шага (0.1, 0.2, 0.3 ... 1.0)
+        float snapped = Mathf.Round(evt.newValue / step) * step;
+
+        // Переставляем бегунок и красную полоску на ровное деление
+        slider.SetValueWithoutNotify(snapped);
+        valueLabel.text = snapped.ToString("0.0", CultureInfo.InvariantCulture);
+    });
+}
 
     private void SetTextSize(bool isNormal)
     {

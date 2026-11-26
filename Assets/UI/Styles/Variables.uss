@@ -10,6 +10,10 @@
     --color-gray_1: rgb(88, 86, 80);
     --color-gray_2: rgb(40, 39, 36);
     --color-gray_3: rgb(35, 34, 31);
+    --color-black_0: rgba(20, 20, 19, 0.82);
+    --color-black_1: rgba(31, 30, 29, 0.72);
+    --color-black_2: rgba(24, 24, 22, 0.74);
+    --color-black_3: rgba(17, 16, 15, 0.78);
 
     /* Тёмные поверхности (от самой тёмной к светлой) */
     --color-bg-track: rgb(12, 13, 16);

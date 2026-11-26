@@ -1,4 +1,86 @@
-/* === УТИЛИТЫ И ПЕРЕХОДЫ ЭКРАНОВ === */
+.unity-base-dropdown__item:checked .unity-base-dropdown__label {
+    color: var(--color-red-active);
+}
+
+.unity-base-dropdown__item:checked {
+    background-color: var(--color-gray_3);
+    border-top-color: var(--color-red-active);
+    border-right-color: var(--color-red-active);
+    border-bottom-color: var(--color-red-active);
+    border-left-color: var(--color-red-active);
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.unity-base-dropdown__item:hover .unity-base-dropdown__label {
+    color: var(--color-white_1);
+}
+
+.unity-base-dropdown__item:active .unity-base-dropdown__label {
+    color: var(--color-white_1);
+}
+
+.unity-base-dropdown .unity-base-dropdown__item:focus:enabled {
+    background-color: var(--color-gray_3);
+}
+
+.unity-base-dropdown .unity-base-dropdown__item:hover:enabled {
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-color: var(--color-red-hover-focused);
+    border-top-color: var(--color-red-hover-focused);
+    border-bottom-color: var(--color-red-hover-focused);
+    border-left-color: var(--color-red-hover-focused);
+    background-color: var(--color-gray_3);
+}
+
+.unity-base-dropdown .unity-base-dropdown__item:hover:enabled:active {
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-color: var(--color-red-hover-focused);
+    border-top-color: var(--color-red-hover-focused);
+    border-bottom-color: var(--color-red-hover-focused);
+    border-left-color: var(--color-red-hover-focused);
+    background-color: var(--color-gray_3);
+}
+
+.unity-base-dropdown__item {
+    background-color: var(--color-gray_2);
+    border-top-color: var(--color-beige);
+    border-right-color: var(--color-beige);
+    border-bottom-color: var(--color-beige);
+    border-left-color: var(--color-beige);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: 48px;
+}
+
+.unity-base-dropdown__label {
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
+    font-size: 24px;
+    color: var(--color-beige);
+}
+
 .hidden {
     display: none;
 }
@@ -26,7 +108,6 @@
     translate: 0 80px;
 }
 
-/* === ПОДСКАЗКИ УПРАВЛЕНИЯ (SETTINGS + LOAD GAME) === */
 .control-hints {
     position: absolute;
     right: 36px;
@@ -51,13 +132,59 @@
     -unity-background-scale-mode: scale-to-fit;
 }
 
-/* Спрайты KeyTip назначишь в UI Builder */
-.hint-icon-mouse { }
-.hint-icon-esc { }
+.hint-icon-mouse {
+}
+
+.hint-icon-esc {
+}
 
 .hint-text {
     font-size: 16px;
     color: var(--color-hint-dark);
     margin: 0;
     padding: 0;
+}
+
+.unity-base-dropdown__container-outer {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.unity-base-dropdown__container-inner {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.unity-base-dropdown__checkmark {
+    display: none;
 }
