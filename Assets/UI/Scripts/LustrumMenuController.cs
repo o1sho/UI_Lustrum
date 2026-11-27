@@ -283,8 +283,8 @@ private void BindSlider(Slider slider, Label valueLabel, float step = 0.1f)
     private void ResetSettings()
     {
         if (_ddLanguage != null) _ddLanguage.index = 0;
-        if (_sldTextSpeed != null) _sldTextSpeed.value = 1.0f;
-        if (_sldAutoSpeed != null) _sldAutoSpeed.value = 1.0f;
+        if (_sldTextSpeed != null) _sldTextSpeed.value = 0.5f;
+        if (_sldAutoSpeed != null) _sldAutoSpeed.value = 0.5f;
         SetTextSize(true);
     }
 }

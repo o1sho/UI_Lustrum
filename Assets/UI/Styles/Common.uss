@@ -119,7 +119,7 @@
 .hint-item {
     flex-direction: row;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 24px;
     background-color: rgba(0, 0, 0, 0);
     border-width: 0;
     padding: 0;
@@ -133,16 +133,19 @@
 }
 
 .hint-icon-mouse {
+    background-image: url("project://database/Assets/UI/Assets/Icons/KeyTip.png?fileID=1430204470&guid=a2a01a70b311e490f87305870dc252b6&type=3#KeyTip_LeftClick");
 }
 
 .hint-icon-esc {
+    background-image: url("project://database/Assets/UI/Assets/Icons/KeyTip.png?fileID=-883817750273765269&guid=a2a01a70b311e490f87305870dc252b6&type=3#KeyTip_Esc");
 }
 
 .hint-text {
-    font-size: 16px;
-    color: var(--color-hint-dark);
+    font-size: 18px;
+    color: var(--color-gray_1);
     margin: 0;
     padding: 0;
+    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/IBMPlexSansRegular%20SDF.asset?fileID=11400000&guid=b1153486df8d54a9fadd23fd2e641b7a&type=2#IBMPlexSansRegular SDF");
 }
 
 .unity-base-dropdown__container-outer {

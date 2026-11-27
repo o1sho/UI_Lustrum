@@ -97,8 +97,10 @@
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-right: 352px;
-    padding-left: 352px;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .setting-row {
@@ -115,6 +117,7 @@
     padding-right: 16px;
     padding-left: 16px;
     padding-bottom: 0;
+    width: 1216px;
 }
 
 .setting-label {
@@ -254,45 +257,38 @@
 
 .segmented-group {
     flex-direction: row;
-    width: 340px;
+    justify-content: space-between;
+    width: 360px;
 }
 
 .seg-btn {
-    height: 56px;
-    margin: 0 4px;
-    border-width: 1px;
-    border-color: var(--color-cream);
+    width: 176px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-gray_2);
+    border-width: 2px;
+    border-color: var(--color-beige);
     border-radius: 0;
     color: var(--color-beige);
-    font-size: 40px;
-    transition-property: background-color, border-color;
+    font-size: 22px;
+    transition-property: background-color, border-color, color;
     transition-duration: var(--time-fast);
-    -unity-font-definition: url("project://database/Assets/UI/Assets/Fonts/RodchenkoBold%20SDF.asset?fileID=11400000&guid=bbda2d78f2afa44338e007e346db838e&type=2#RodchenkoBold SDF");
-    width: 304px;
-    background-color: rgba(0, 0, 0, 0);
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
 }
 
-.seg-btn:hover {
-    background-color: var(--color-accent-hover);
+.seg-btn:hover,
+.seg-btn:focus {
+    background-color: var(--color-gray_3);
+    border-color: var(--color-red-hover-focused);
+    color: var(--color-white_1);
 }
 
 .seg-btn--active,
-.seg-btn--active:hover {
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
-    color: var(--color-white);
+.seg-btn--active:hover,
+.seg-btn--active:focus {
+    background-color: var(--color-red-active);
+    border-color: var(--color-red-active);
+    color: var(--color-white_1);
 }
 
 .settings-footer {
@@ -490,7 +486,6 @@
     background-color: var(--color-gray_3);
 }
 
-/* 1. Focus (клавиатура/геймпад или после клика по слайдеру) */
 .lustrum-slider:focus .unity-base-slider__fill {
     background-color: var(--color-red-hover-focused);
 }
@@ -499,12 +494,10 @@
     border-color: var(--color-white_1);
 }
 
-/* 2. Hover — срабатывает ТОЛЬКО когда курсор на самом драгере */
 .lustrum-slider.is-dragger-hover .unity-base-slider__fill {
     background-color: var(--color-red-hover-focused);
 }
 
-/* 3. Active — пока зажат и тянется драгер */
 .lustrum-slider.is-dragger-active .unity-base-slider__fill {
     background-color: var(--color-red-active);
 }
@@ -516,4 +509,3 @@
 .lustrum-slider.is-dragger-active .unity-base-slider__dragger {
     border-color: var(--color-red-active);
 }
-
